@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+iframe{
+    color: hsl(208, 11%, 55%);
+    color: hsl(192, 100%, 9%);
+    color: hsl(193, 100%, 96%);
+    color: hsl(322, 100%, 66%);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.head{
+    min-height: 100vh;
+    background-image: url(./bg-hero-desktop.svg);
+    background-size: cover;
+    background-color: hsl(193, 100%, 96%);
+    padding: 60px 100px 60px 100px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.logo img{
+    display: inline-block;
+    width: 100%;
+}
+
+.navbutton button{
+    font-family: "Poppins";
+    background-color: white;
+    padding: 20px 70px;
+    border-radius: 40px;
+    border: 1px solid hsl(193, 100%, 96%);
+    color: hsl(192, 100%, 9%);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav button:hover{
+    opacity: .7;
+}
+
+.build{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.build1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.parab{
+    margin-bottom: 30px;
+}
+
+.buildbut button, .area-cont button{
+    background-color: hsl(322, 100%, 66%);
+    padding: 20px 70px;
+    border-radius: 40px;
+    border: 1px solid hsl(322, 100%, 66%);
+    color: hsl(193, 100%, 96%);
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.buildbut button:hover, .area-cont button:hover{
+    opacity: .7;
+}
+
+.buildright, .buildleft{
+    width: 50%;
+}
+
+.buildright img{
+    display: inline-block;
+    width: 100%;
+}
+
+.feature{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 100px;
+    gap: 30px;
+}
+
+.grow, .flow, .user{
+    box-shadow: 0px 0px 5px 2px hsla(209, 11%, 55%, 0.3);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    padding-left: 100px;
+    padding-right: 40px;
+    max-width: 100%;
+    align-items: center;
+}
+
+.growright, .flowright, .userright{
+    width: 40%;
+}
+
+.growright img, .flowright img, .userright img{
+    width: 100%;
+    display: inline-block;
+}
+
+.growleft, .flowleft, .userleft{
+    width: 50%;
+}
+
+.flow{
+    flex-direction: row-reverse;
+}
+
+.area{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.area-cont {
+    position: relative;
+    top: 50px;
+    background: white;
+    padding: 40px 60px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 2px hsl(209deg 11% 55% / 30%);
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.area-cont h4{
+    color: hsl(192, 100%, 9%);
+}
+
+.foot{
+    background-color: hsl(192, 100%, 9%);
+    color: hsl(193, 100%, 96%);
+    padding: 60px 100px;
+    padding-top: 110px;
+}
+
+.foot-cont{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footleft{
+    width: 35%;
+    align-items: left;
+    align-content: left;
+}
+
+.footImg{
+    margin-bottom: 40px;
+}
+
+.foottext{
+    margin: 20px 0;
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.footright{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: right;
+    align-items: right;
+}
+
+.one .footListItem, .two .footListItem{
+    margin-bottom: 10px;
+}
+
+.ul a{
+    color: hsl(193, 100%, 96%);
+}
+
+.ul a:hover{
+    text-decoration: underline;
+}
+
+.three .footListItem i:hover{
+    border-color: hsl(322, 100%, 66%);
+    color: hsl(322, 100%, 66%);
+}
+
+.three{
+    display: flex;
+    gap: 10px;
+}
+
+.three .footListItem i{
+    border-radius: 50%;
+    border: 1px solid hsl(193, 100%, 96%);
+    align-items: center;
+    align-content: center;
+}
+
+.copyright{
+    margin-top: 10px;
+    text-align: right;
+    font-size: 10px;
+}
+
+@media screen and (max-width: 440px) {
+
+    .head{
+        padding: 20px;
+    }
+
+    .navbutton button{
+        padding: 8px 30px;
+    }
+    .build{
+        flex-direction: column;
+    }
+
+    .buildleft{
+        width: 100%;
+    }
+
+    .buildright{
+        width: 100%;
+    }
+
+    .feature{
+        padding: 20px;
+        padding-top: 60px;
+    }
+
+    .logo img{
+        width: 50%;
+    }
+
+    .foottext{
+        gap: 20px;
+        align-items: left;
+    }
+
+    .area-cont h2{
+        font-size: 16px;
+    }
+
+    .area-cont{
+        padding: 40px 0;
+        width: 90%;
+    }
+
+    .navbutton button{
+        width: 150px;
+        padding: 5px;
+    }
+
+    .grow, .flow, .user{
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .growleft, .flowleft, .userleft{
+        width: 100%;
+    }
+
+    .growright, .flowright, .userright{
+        width: 100%;
+    }
+
+    .foot{
+        padding: 60px 20px;
+        padding-top: 110px;
+    }
+
+    .build{
+        text-align: center;
+    }
+
+    .build1{
+        font-size: 25px;
+    }
+
+    .footleft, .footright{
+        width: 100%;
+    }
+
+    .footright{
+        flex-direction: column;
+    }
+
+    .three{
+        align-self: center;
+    }
+
+    .copyright{
+        text-align: center;
+    }
+}
